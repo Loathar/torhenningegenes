@@ -52,7 +52,7 @@ export default function Nav() {
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <Link href={"/"} passHref>
             <span
-              className="cursor-pointer uppercase  tracking-wider text-2xl bg-gray-900 text-gray-50 font-extralight hover:text-pink-600 hover:border-b-2 border-pink-600 transition ease-out duration-1000 hover:translate-x-4 hover:pl-6 p-1
+              className="cursor-pointer uppercase  tracking-wider text-2xl bg-gray-900 text-gray-50 font-extralight hover:text-pink-600 hover:border-b-2 border-pink-600  ease-out duration-1000 hover:translate-x-4 hover:pl-8 p-1
             "
             >
               Tor Henning Egenes
@@ -91,30 +91,30 @@ export default function Nav() {
             id="navbar-default"
           >
             <ul className="flex flex-col mt-4 rounded-lg justify-around items-start md:h-24  md:flex-row md:items-center md:justify-center md:space-x-8 md:mt-0 md:text-sm md:font-light md:border-0  md:dark:bg-gray-90">
-              <li className="mb-3 mt-3">
+              <li className="mb-3">
                 <Link href={"/"} passHref aria-current="page" className=" ">
-                  <span className=" text-gray-50 active:bg-red-500 font-sans font-light  text-lg hover:bg-pink-600 hover:text-sky-50 md:border-0 p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
+                  <span className=" text-gray-50 active:bg-red-500 font-sans font-extralight  text-lg hover:bg-pink-700 hover:text-sky-50 md:border-0 px-6 py-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
                     Om
                   </span>
                 </Link>
               </li>
               <li className="mb-3">
                 <Link href={"/Reg"}>
-                  <span className="text-gray-50 text-lg font-light   hover:bg-pink-600 hover:text-sky-50 md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
+                  <span className="text-gray-50 text-lg font-extralight   hover:bg-pink-700 hover:text-sky-50 md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
                     Prosjekter{" "}
                   </span>
                 </Link>
               </li>
               <li className="mb-3">
                 <Link href={"/Reg"}>
-                  <span className="text-gray-50 text-lg font-light   hover:bg-pink-600 hover:text-sky-50 md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
+                  <span className="text-gray-50 text-lg font-extralight  hover:bg-pink-700 hover:text-sky-50 md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
                     Blogg
                   </span>
                 </Link>
               </li>
               <li className="mb-3">
                 <Link href={"/Old-lists"} passHref>
-                  <span className=" text-gray-50 text-lg font-light   hover:bg-pink-600 hover:text-sky-50  md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
+                  <span className=" text-gray-50 text-lg font-extralight   hover:bg-pink-700 hover:text-sky-50  md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
                     Kontakt
                   </span>
                 </Link>

@@ -19,6 +19,22 @@ export default function Home() {
       </Head>
       <Nav />
       <main className="bg-gray-50 text-gray-900">
+        <div className="container flex flex-col items-end border-b-2 border-gray-900">
+          <h1 className="uppercase font-bold text-6xl md:text-8xl mb-3">
+            Tor Henning Egenes
+          </h1>
+          <h2 className=" font-semibold text-4xl hover:bg-gray-900 hover:text-pink-600">
+            Web developer
+          </h2>
+          <div>
+            <button className="bg-gray-900 text-gray-50 px-16 py-2 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5">
+              About
+            </button>
+            <button className="bg-gray-900 text-gray-50 px-16 py-2 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out">
+              Projects
+            </button>
+          </div>
+        </div>
         <article>
           <p>This is a article</p>
         </article>
