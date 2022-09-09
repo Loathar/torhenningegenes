@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/router";
+import ToggleSwitch from "./components/toggle-switch";
 
 const useClickOutside = (handler) => {
   let domNode = useRef();
@@ -31,6 +33,7 @@ export default function Nav() {
   const router = useRouter();
 
   const [showMenu, setShowMenu] = useState(false);
+  const [enabled, setEnabled] = useState(false);
 
   const showHamburgerMenuHandler = function () {
     setShowMenu(true);
@@ -118,6 +121,15 @@ export default function Nav() {
                     Kontakt
                   </span>
                 </Link>
+              </li>
+              <li className=" flex flex-row align-middle">
+                <span className="w-9 h-9 hover:bg-pink-600 text-gray-50">
+                  Nor
+                </span>
+                <ToggleSwitch enabled={enabled} setEnabled={setEnabled} />
+                <span className="ml-2 w-9 h-9 hover:bg-pink-600  text-gray-50">
+                  Eng
+                </span>
               </li>
             </ul>
           </div>
