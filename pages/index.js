@@ -1,7 +1,9 @@
 import Head from "next/head";
-
+import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Kontakt from "./kontakt";
+import Prosjekter from "./prosjekter";
 import Nav from "./nav";
 
 export default function Home() {
@@ -25,10 +27,10 @@ export default function Home() {
       <Nav />
       <main className="bg-gray-50 text-gray-900 flex flex-col items-center mx-auto">
         <div className="container flex flex-col items-center border-b-2 border-gray-900 justify-end">
-          <h1 className="uppercase font-bold text-8xl md:text-6xl mb-1 tracking-wide mt-10">
+          <h1 className="uppercase font-thin text-8xl md:text-6xl mb-1 tracking-wide mt-10">
             Tor Henning Egenes
           </h1>
-          <h2 className=" font-semibold text-4xl hover:bg-gray-900 hover:text-pink-600 mb-12 p-4  ease-in duration-1000 hover:pl-96">
+          <h2 className=" font-thin text-4xl hover:bg-gray-900 hover:text-pink-600 mb-12 p-4  ease-in duration-1000 hover:pl-96">
             Webutvikler
           </h2>
           <div className="mb-36">
@@ -39,13 +41,15 @@ export default function Home() {
               Prosjekter{" "}
             </button>
             <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out">
-              Kontakt
+              <Link href={"/#kontakt"}>Kontakt</Link>
             </button>
           </div>
         </div>
-        <article>
-          <p>This is a article</p>
-        </article>
+
+        <Prosjekter />
+        <div className="" id="kontakt">
+          Kontakt er fint
+        </div>
       </main>
 
       <footer></footer>
