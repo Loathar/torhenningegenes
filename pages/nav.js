@@ -116,20 +116,16 @@ export default function Nav() {
                 </Link>
               </li>
               <li className="mb-3">
-                <Link href={"/Old-lists"} passHref>
-                  <span className=" text-gray-50 text-lg font-extralight   hover:bg-pink-700 hover:text-sky-50  md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
+                <Link href={"/#kontakt"} passHref>
+                  <span className=" text-gray-50 text-lg font-extralight hover:bg-pink-700 hover:text-sky-50  md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
                     Kontakt
                   </span>
                 </Link>
               </li>
               <li className=" flex flex-row align-middle">
-                <span className="w-9 h-9 hover:bg-pink-600 text-gray-50">
-                  Nor
-                </span>
+                <span className="w-9 h-9 text-gray-50">Nor</span>
                 <ToggleSwitch enabled={enabled} setEnabled={setEnabled} />
-                <span className="ml-2 w-9 h-9 hover:bg-pink-600  text-gray-50">
-                  Eng
-                </span>
+                <span className="ml-2   text-gray-50">Eng</span>
               </li>
             </ul>
           </div>
