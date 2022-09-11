@@ -49,13 +49,10 @@ export default function Nav() {
         ref={domNode}
         className=" px-2 bg-gray-900 sm:px-4 py-3  dark:bg-gray-900 sticky top-0 z-50 h-auto"
       >
-        {/* <span>
-      <p>Innlogget som:{currentUser.email}</p>
-    </span> */}
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <Link href={"/"} passHref>
             <span
-              className="cursor-pointer uppercase  tracking-wider text-2xl bg-gray-900 text-gray-50 font-extralight hover:text-pink-600 hover:border-b-2 border-pink-600  ease-out duration-1000 hover:translate-x-4 hover:pl-8 p-1
+              className="cursor-pointer uppercase  tracking-widest text-2xl bg-gray-900 text-gray-50 font-extralight hover:text-pink-600 hover:border-b-2 border-pink-600  ease-out duration-1000 hover:translate-x-4 hover:pl-8 p-1
             "
             >
               Tor Henning Egenes
@@ -93,41 +90,89 @@ export default function Nav() {
             }
             id="navbar-default"
           >
-            <ul className="flex flex-col mt-4 rounded-lg justify-around items-start md:h-24  md:flex-row md:items-center md:justify-center md:space-x-8 md:mt-0 md:text-sm md:font-light md:border-0  md:dark:bg-gray-90">
-              <li className="mb-3">
-                <Link href={"/"} passHref aria-current="page" className=" ">
-                  <span className=" text-gray-50 active:bg-red-500 font-sans font-extralight  text-lg hover:bg-pink-700 hover:text-sky-50 md:border-0 px-6 py-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
-                    Om
-                  </span>
-                </Link>
-              </li>
-              <li className="mb-3">
-                <Link href={"/Reg"}>
-                  <span className="text-gray-50 text-lg font-extralight   hover:bg-pink-700 hover:text-sky-50 md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
-                    Prosjekter{" "}
-                  </span>
-                </Link>
-              </li>
-              <li className="mb-3">
-                <Link href={"/Reg"}>
-                  <span className="text-gray-50 text-lg font-extralight  hover:bg-pink-700 hover:text-sky-50 md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
-                    Blogg
-                  </span>
-                </Link>
-              </li>
-              <li className="mb-3">
-                <Link href={"/#kontakt"} passHref>
-                  <span className=" text-gray-50 text-lg font-extralight hover:bg-pink-700 hover:text-sky-50  md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
-                    Kontakt
-                  </span>
-                </Link>
-              </li>
-              <li className=" flex flex-row align-middle">
-                <span className="w-9 h-9 text-gray-50">Nor</span>
-                <ToggleSwitch enabled={enabled} setEnabled={setEnabled} />
-                <span className="ml-2   text-gray-50">Eng</span>
-              </li>
-            </ul>
+            {enabled ? (
+              <ul className="flex flex-col mt-4 rounded-lg justify-around items-start md:h-24  md:flex-row md:items-center md:justify-center md:space-x-8 md:mt-0 md:text-sm md:font-light md:border-0  md:dark:bg-gray-90">
+                <li className="mb-3">
+                  <Link
+                    href={"/about"}
+                    passHref
+                    aria-current="page"
+                    className=" "
+                  >
+                    <span className=" text-gray-50 active:bg-red-500 font-sans font-extralight  text-lg hover:bg-pink-700 hover:text-sky-50 md:border-0 px-6 py-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
+                      About
+                    </span>
+                  </Link>
+                </li>
+                <li className="mb-3">
+                  <Link href={"/prosjekter"}>
+                    <span className="text-gray-50 text-lg font-extralight   hover:bg-pink-700 hover:text-sky-50 md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
+                      Projects{" "}
+                    </span>
+                  </Link>
+                </li>
+                <li className="mb-3">
+                  <Link href={"/Reg"}>
+                    <span className="text-gray-50 text-lg font-extralight  hover:bg-pink-700 hover:text-sky-50 md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
+                      Blogg
+                    </span>
+                  </Link>
+                </li>
+                <li className="mb-3">
+                  <Link href={"/#kontakt"} passHref>
+                    <span className=" text-gray-50 text-lg font-extralight hover:bg-pink-700 hover:text-sky-50  md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
+                      Contact
+                    </span>
+                  </Link>
+                </li>
+                <li className=" flex flex-row align-middle">
+                  <span className="w-9 h-9 text-gray-50">Nor</span>
+                  <ToggleSwitch enabled={enabled} setEnabled={setEnabled} />
+                  <span className="ml-2   text-gray-50">Eng</span>
+                </li>
+              </ul>
+            ) : (
+              <ul className="flex flex-col mt-4 rounded-lg justify-around items-start md:h-24  md:flex-row md:items-center md:justify-center md:space-x-8 md:mt-0 md:text-sm md:font-light md:border-0  md:dark:bg-gray-90">
+                <li className="mb-3">
+                  <Link
+                    href={"/about"}
+                    passHref
+                    aria-current="page"
+                    className=" "
+                  >
+                    <span className=" text-gray-50 active:bg-red-500 font-sans font-extralight  text-lg hover:bg-pink-700 hover:text-sky-50 md:border-0 px-6 py-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
+                      Om
+                    </span>
+                  </Link>
+                </li>
+                <li className="mb-3">
+                  <Link href={"/prosjekter"}>
+                    <span className="text-gray-50 text-lg font-extralight   hover:bg-pink-700 hover:text-sky-50 md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
+                      Prosjekter{" "}
+                    </span>
+                  </Link>
+                </li>
+                <li className="mb-3">
+                  <Link href={"/Reg"}>
+                    <span className="text-gray-50 text-lg font-extralight  hover:bg-pink-700 hover:text-sky-50 md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
+                      Blogg
+                    </span>
+                  </Link>
+                </li>
+                <li className="mb-3">
+                  <Link href={"/#kontakt"} passHref>
+                    <span className=" text-gray-50 text-lg font-extralight hover:bg-pink-700 hover:text-sky-50  md:border-0 md:border-white rounded-pill p-2 md:no-underline transition duration-300 ease-in-out visited:text-red-600 cursor-pointer  tracking-wide">
+                      Kontakt
+                    </span>
+                  </Link>
+                </li>
+                <li className=" flex flex-row align-middle">
+                  <span className="w-9 h-9 text-gray-50">Nor</span>
+                  <ToggleSwitch enabled={enabled} setEnabled={setEnabled} />
+                  <span className="ml-2   text-gray-50">Eng</span>
+                </li>
+              </ul>
+            )}
           </div>
         </div>
       </nav>

@@ -24,7 +24,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <Nav />
+
       <main className="bg-gray-50 text-gray-900 flex flex-col items-center mx-auto">
         <div className="container flex flex-col items-center border-b-2 border-gray-900 justify-end">
           <h1 className="uppercase font-thin text-8xl md:text-6xl mb-1 tracking-wide mt-10">
@@ -35,10 +35,10 @@ export default function Home() {
           </h2>
           <div className="mb-36">
             <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5">
-              Om
+              <Link href={"/about"}>Om</Link>
             </button>
             <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5">
-              Prosjekter{" "}
+              <Link href={"/prosjekter"}> Prosjekter </Link>
             </button>
             <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out">
               <Link href={"/#kontakt"}>Kontakt</Link>
@@ -46,7 +46,6 @@ export default function Home() {
           </div>
         </div>
 
-        <Prosjekter />
         <div className="" id="kontakt">
           Kontakt er fint
         </div>
