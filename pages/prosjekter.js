@@ -13,14 +13,19 @@ export default function Prosjekter() {
         <div className="m-4 min-w-min">
           <h1>Telleliste for barnehage</h1>
 
-          <Image src={tellelisten} />
+          <Image src={tellelisten} className="rounded-2xl " />
           <div className="flex flex-row justify-between items-center align-middle">
-            <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5 uppercase">
-              <Link href="https://tellelisten.netlify.app">Live</Link>
-            </button>
-            <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5 uppercase">
-              <Link href="https://github.com/Loathar/telleliste">Kode</Link>
-            </button>
+            <Link href="https://tellelisten.netlify.app">
+              <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5 uppercase">
+                Live
+              </button>
+            </Link>
+
+            <Link href="https://github.com/Loathar/telleliste">
+              <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5 uppercase">
+                Kode
+              </button>
+            </Link>
           </div>
         </div>
 
