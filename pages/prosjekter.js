@@ -18,13 +18,13 @@ export default function Prosjekter() {
           <Image src={tellelisten} className="rounded-2xl" />
           <div className="flex flex-row justify-between items-center align-middle">
             <Link href="https://tellelisten.netlify.app">
-              <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5 uppercase">
+              <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5 uppercase rounded">
                 Live
               </button>
             </Link>
 
             <Link href="https://github.com/Loathar/telleliste">
-              <button className="bg-gray-900 text-gray-50   px-14 py-4 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5 uppercase">
+              <button className="bg-gray-900 text-gray-50   px-14 py-4 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5 uppercase rounded">
                 <div className="flex flex-row align-middle items-center justify-between">
                   <p className="mr-3">Kode</p>
                   <div className="h-8 w-8">

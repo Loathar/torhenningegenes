@@ -31,12 +31,15 @@ export default function Home() {
             Tor Henning Egenes
           </h1>
           <h2 className=" font-thin text-4xl hover:bg-gray-900 hover:text-pink-600 mb-12 p-4  ease-in duration-1000 hover:pl-96">
-            Webutvikler
+            Frontend-utvikler
           </h2>
           <div className="mb-36">
-            <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5">
-              <Link href={"/about"}>Om</Link>
-            </button>
+            <Link href={"/about"}>
+              <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5">
+                Om{" "}
+              </button>
+            </Link>
+
             <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5">
               <Link href={"/prosjekter"}> Prosjekter </Link>
             </button>
