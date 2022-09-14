@@ -5,8 +5,14 @@ import styles from "../styles/Home.module.css";
 import Kontakt from "./kontakt";
 import Prosjekter from "./prosjekter";
 import Nav from "./nav";
+import About from "./about";
+import citybynight from "../img/citybynight.webp";
+import citycolor from "../img/citycolor.webp";
 
-export default function Home() {
+export default function Home(props) {
+  const { enabled } = props;
+
+  console.log(enabled);
   return (
     <>
       <Head>
@@ -23,37 +29,52 @@ export default function Home() {
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
       </Head>
 
-      <main className="bg-gray-50 text-gray-900 flex flex-col items-center mx-auto">
-        <div className="container flex flex-col items-center border-b-2 border-gray-900 justify-end">
+      <main className="bg-gray-50 text-gray-900 flex flex-col items-center mx-auto mb-28">
+        <section className="container flex flex-col items-center border-b-2 border-gray-900 justify-end ">
           <h1 className="uppercase font-thin text-8xl md:text-6xl mb-1 tracking-wide mt-10">
             Tor Henning Egenes
           </h1>
-          <h2 className=" font-thin text-4xl hover:bg-gray-900 hover:text-pink-600 mb-12 p-4  ease-in duration-1000 hover:pl-96">
+          <h2 className=" font-thin text-4xl hover:bg-gray-900 hover:text-pink-600 mb-12 p-4  ease-in duration-1000 hover:pl-96 tracking-wide">
             Frontend-utvikler
           </h2>
+
           <div className="mb-36">
-            <Link href={"/about"}>
+            <Link href={"#about"}>
               <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5">
                 Om{" "}
               </button>
             </Link>
 
-            <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5">
-              <Link href={"/prosjekter"}> Prosjekter </Link>
-            </button>
-            <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out">
-              <Link href={"/#kontakt"}>Kontakt</Link>
-            </button>
-          </div>
-        </div>
+            <Link href={"#prosjekter"}>
+              <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5">
+                Prosjekter
+              </button>
+            </Link>
 
-        <div className="" id="kontakt">
-          Kontakt er fint
-        </div>
+            <Link href={"/#kontakt"}>
+              <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out">
+                Kontakt{" "}
+              </button>
+            </Link>
+          </div>
+        </section>
+        <div id="about"></div>
       </main>
 
+      <About />
+
+      <Image src={citybynight} layout="responsive" className="mb-6" />
+
+      <Prosjekter />
+
+      <Image src={citycolor} layout="responsive" />
+      <Kontakt />
       <footer></footer>
     </>
   );
