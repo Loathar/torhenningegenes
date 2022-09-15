@@ -1,5 +1,10 @@
 import Image from "next/image";
 import torhenningPortrett from "../img/torhenning.webp";
+import htmlLogo from "../img/logo/html5.png";
+import cssLogo from "../img/logo/css.png";
+import jsLogo from "../img/logo/javascript.png";
+import reactLogo from "../img/logo/react.png";
+import nextLogo from "../img/logo/nextjs.png";
 export default function About() {
   console.log("hei");
 
@@ -29,17 +34,51 @@ export default function About() {
             Egenskaper
           </h1>
           <div className="">
-            <ul className="flex flex-row justify-between flex-wrap">
-              <li className="m-4">HTML</li>
-              <li className="m-4">CSS</li>
-              <li className="m-4">JavaScript</li>
-              <li className="m-4">TypeScript</li>
-              <li className="m-4">ReactJS</li>
-              <li className="m-4">NextJS</li>
-              <li className="m-4">Tailwind CSS</li>
-              <li className="m-4">GitHub</li>
-              <li className="m-4">NPM</li>
-              <li className="m-4">Netlify</li>
+            <ul className="flex flex-row justify-between flex-wrap text-center">
+              <li className="m-4 w-16 h-16 ">
+                <Image
+                  src={htmlLogo}
+                  layout="responsive"
+                  className="grayscale hover:grayscale-0"
+                />
+                HTML
+              </li>
+              <li className="m-4 w-16 h-16 ">
+                <Image
+                  src={cssLogo}
+                  layout="responsive"
+                  className="grayscale hover:grayscale-0"
+                />
+                CSS
+              </li>
+              <li className="m-4 w-16 h-16 ">
+                <Image
+                  src={jsLogo}
+                  layout="responsive"
+                  className="grayscale hover:grayscale-0"
+                />
+                JavaScript
+              </li>
+              <li className="m-4 w-16 h-16 ">
+                <div>
+                  <Image
+                    src={reactLogo}
+                    layout="responsive"
+                    className="grayscale hover:grayscale-0 "
+                  />
+                </div>
+                <span className="mt-2">ReactJS</span>
+              </li>
+              <li className="m-4 w-16 h-16 ">
+                <div>
+                  <Image
+                    src={nextLogo}
+                    layout="responsive"
+                    className="grayscale hover:grayscale-0 p-2 "
+                  />
+                </div>
+                <span className="mt-2">NextJS</span>
+              </li>
             </ul>
           </div>
         </div>
