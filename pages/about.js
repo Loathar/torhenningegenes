@@ -5,6 +5,10 @@ import cssLogo from "../img/logo/css.png";
 import jsLogo from "../img/logo/javascript.png";
 import reactLogo from "../img/logo/react.png";
 import nextLogo from "../img/logo/nextjs.png";
+import tailwindLogo from "../img/logo/tailwind.png";
+import npmLogo from "../img/logo/npm.png";
+import firebaseLogo from "../img/logo/firebase.png";
+
 export default function About() {
   console.log("hei");
 
@@ -34,7 +38,7 @@ export default function About() {
             Egenskaper
           </h1>
           <div className="">
-            <ul className="flex flex-row justify-between flex-wrap text-center">
+            <ul className="flex flex-row justify-between flex-wrap text-center items-center">
               <li className="m-4 w-16 h-16 ">
                 <Image
                   src={htmlLogo}
@@ -43,7 +47,7 @@ export default function About() {
                 />
                 HTML
               </li>
-              <li className="m-4 w-16 h-16 ">
+              <li className="m-4  w-14 h-16 ">
                 <Image
                   src={cssLogo}
                   layout="responsive"
@@ -51,7 +55,7 @@ export default function About() {
                 />
                 CSS
               </li>
-              <li className="m-4 w-16 h-16 ">
+              <li className="m-4 w-20 h-16 ">
                 <Image
                   src={jsLogo}
                   layout="responsive"
@@ -78,6 +82,36 @@ export default function About() {
                   />
                 </div>
                 <span className="mt-2">NextJS</span>
+              </li>
+              <li className="m-4 w-16 h-16 ">
+                <div>
+                  <Image
+                    src={tailwindLogo}
+                    layout="responsive"
+                    className="grayscale hover:grayscale-0 p-2 "
+                  />
+                </div>
+                <span className="mt-2">tailwind CSS</span>
+              </li>
+              <li className="m-4 w-16 h-16 ">
+                <div>
+                  <Image
+                    src={npmLogo}
+                    layout="responsive"
+                    className="grayscale hover:grayscale-0 p-2 "
+                  />
+                </div>
+                <span className="mt-2">NPM</span>
+              </li>
+              <li className="m-4 w-16 h-16 ">
+                <div>
+                  <Image
+                    src={firebaseLogo}
+                    layout="responsive"
+                    className="grayscale hover:grayscale-0 p-2 "
+                  />
+                </div>
+                <span className="mt-2">Firebase</span>
               </li>
             </ul>
           </div>
