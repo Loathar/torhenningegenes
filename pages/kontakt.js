@@ -12,7 +12,7 @@ export default function Kontakt() {
             <span>tor.henning.egenes@gmail.com</span>
           </li>
           <li>Twitter</li>
-          <li>github</li>
+          <li>GitHub</li>
         </ul>
       </section>
       ;

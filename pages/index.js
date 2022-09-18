@@ -46,19 +46,19 @@ export default function Home(props) {
 
           <div className="mb-36">
             <Link href={"#about"}>
-              <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5">
+              <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5 cursor-pointer">
                 Om{" "}
               </button>
             </Link>
 
             <Link href={"#prosjekter"}>
-              <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5">
+              <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out mr-5 cursor-pointer">
                 Prosjekter
               </button>
             </Link>
 
             <Link href={"/#kontakt"}>
-              <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out">
+              <button className="bg-gray-900 text-gray-50 px-16 py-3 hover:bg-pink-600 hover:text-gray-50 transition-colors duration-300 ease-out cursor-pointer">
                 Kontakt{" "}
               </button>
             </Link>

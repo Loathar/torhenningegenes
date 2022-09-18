@@ -23,7 +23,7 @@ export default function About() {
           <div className=" w-72 h-72  mb-4 m-2">
             <Image src={torhenningPortrett} layout="responsive" />
           </div>
-          <p className="text-gray-900 mb-24 h-80 w-80 m-2">
+          <p className="text-gray-900 mb-24 h-80 w-80 m-2 ">
             Her skal det stå fornuftig tekst om drømmer håp og visjoner. Litt om
             læring. koding og annet smart. quis deserunt ullamco nostrud
             laborum. Adipisicing anim ad irure enim excepteur consequat. Tempor
@@ -34,11 +34,11 @@ export default function About() {
           </p>
         </div>
         <div className="mt-12">
-          <h1 className="text-gray-900 text-3xl uppercase tracking-wider mt-6">
+          <h1 className="text-gray-900 text-3xl uppercase tracking-wider mt-16 mb-8">
             Egenskaper
           </h1>
           <div className="">
-            <ul className="flex flex-row justify-between flex-wrap text-center items-center">
+            <ul className="flex flex-row justify-between flex-wrap text-center items-center align-middle">
               <li className="m-4 w-16 h-16 ">
                 <Image
                   src={htmlLogo}
@@ -103,7 +103,7 @@ export default function About() {
                 </div>
                 <span className="mt-2">NPM</span>
               </li>
-              <li className="m-4 w-16 h-16 ">
+              <li className="m-4 w-14 h-14 ">
                 <div>
                   <Image
                     src={firebaseLogo}
