@@ -1,3 +1,7 @@
+import Image from "next/image";
+import Link from "next/link";
+import twitterLogo from "../img/logo/twitter.png";
+
 export default function Kontakt() {
   return (
     <>
@@ -11,7 +15,26 @@ export default function Kontakt() {
             </span>
             <span>tor.henning.egenes@gmail.com</span>
           </li>
-          <li>Twitter</li>
+          <li className="flex flex-row align-middle items-center">
+            <Link
+              href="https://www.twitter.com/tor_henning"
+              className="cursor-pointer"
+            >
+              <div className="m-4 w-14 h-14 ">
+                <Image
+                  src={twitterLogo}
+                  layout="responsive"
+                  className="cursor-pointer"
+                />
+              </div>
+            </Link>
+            <Link
+              href="https://www.twitter.com/tor_henning"
+              className="cursor-pointer"
+            >
+              <span className="cursor-pointer">Twitter</span>
+            </Link>
+          </li>
           <li>GitHub</li>
         </ul>
       </section>
