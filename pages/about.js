@@ -17,7 +17,7 @@ export default function About() {
           Hvem er Tor henning?
         </h1>
 
-        <div className="h-56 flex flex-row items-start justify-start align-middle mt-12 mb-16  ">
+        <div className="h-56 flex flex-col md:flex-row  items-start justify-start align-middle mt-12 mb-16  ">
           <div className=" w-72 h-72  mb-4 m-2">
             <Image src={torhenningPortrett} layout="responsive" />
           </div>
@@ -30,15 +30,17 @@ export default function About() {
             <span className="mt-1">
               Ta kontakt hvis jeg kan hjelpe deg med noe!
             </span>
-            <span className="mt-2  font-medium">Tor Henning</span>
+            <span className="mt-8 font-semibold tracking-wider">
+              Tor Henning Egenes
+            </span>
           </div>
         </div>
         <div className="mt-12">
-          <h1 className="text-gray-900 text-3xl uppercase tracking-wider mt-16 mb-8">
+          <h1 className="text-gray-900 text-3xl uppercase tracking-wider mt-56 md:mt-16 mb-8">
             Egenskaper
           </h1>
           <div className="">
-            <ul className="flex flex-row justify-between flex-wrap text-center items-center align-middle">
+            <ul className="flex flex-col md:justify-between md:flex-wrap text-center items-center align-middle">
               <li className="">
                 <div className="m-4 w-16 h-16 ">
                   <Image
