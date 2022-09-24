@@ -40,7 +40,7 @@ export default function About() {
             Egenskaper
           </h1>
           <div className="">
-            <ul className="flex flex-col md:justify-between md:flex-wrap text-center items-center align-middle">
+            <ul className="flex flex-col md:flex-row md:justify-between md:flex-wrap text-center items-center align-middle">
               <li className="">
                 <div className="m-4 w-16 h-16 ">
                   <Image
