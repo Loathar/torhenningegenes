@@ -41,7 +41,7 @@ export default function Home(props) {
             Tor Henning Egenes
           </h1>
           <h2 className=" font-thin text-4xl hover:bg-gray-900 hover:text-pink-600 mb-12 p-4  ease-in duration-1000 hover:pl-96 tracking-wide">
-            Frontend-utvikler
+            Frontend -utvikler
           </h2>
 
           <div className="mb-36">

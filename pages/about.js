@@ -17,7 +17,7 @@ export default function About() {
           Hvem er Tor henning?
         </h1>
 
-        <div className="h-56 flex flex-col md:flex-row  items-start justify-start align-middle mt-12 mb-16  ">
+        <div className="h-56 flex flex-col md:flex-row items-start justify-start align-middle mt-12 mb-16  ">
           <div className=" w-72 h-72  mb-4 m-2">
             <Image src={torhenningPortrett} layout="responsive" />
           </div>
@@ -37,7 +37,7 @@ export default function About() {
         </div>
         <div className="mt-12">
           <h1 className="text-gray-900 text-3xl uppercase tracking-wider mt-56 md:mt-16 mb-8">
-            Egenskaper
+            Teknologier
           </h1>
           <div className="">
             <ul className="flex flex-col md:flex-row md:justify-between md:flex-wrap text-center items-center align-middle">
@@ -113,7 +113,7 @@ export default function About() {
                     className="grayscale hover:grayscale-0 p-2 "
                   />
                 </div>
-                <span className="mt-2">tailwind CSS</span>
+                <span className="mt-2">Tailwind CSS</span>
               </li>
 
               <li>

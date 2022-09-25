@@ -11,15 +11,31 @@ export default function Kontakt() {
 
         <ul className="flex flex-col items-center">
           <li className="flex flex-row justify-around">
-            <span className="material-symbols-outlined text-gray-900 mr-2 h-6 w-6">
-              mail
-            </span>
-            <span>tor.henning.egenes@gmail.com</span>
+            <a
+              href="mailto:tor.henning.egenes@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="material-symbols-outlined text-gray-900 mr-2 h-6 w-6">
+                mail
+              </span>
+            </a>
+
+            <a
+              href="mailto:tor.henning.egenes@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Send meg en epost!</span>
+            </a>
           </li>
+
           <li className="flex flex-row align-middle items-center">
-            <Link
-              href="https://www.twitter.com/tor_henning"
-              className="cursor-pointer"
+            <a
+              href="https://www.twitter.com/tor_henning "
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
             >
               <div className="m-4 w-14 h-14 ">
                 <Image
@@ -28,18 +44,22 @@ export default function Kontakt() {
                   className="cursor-pointer"
                 />
               </div>
-            </Link>
-            <Link
-              href="https://www.twitter.com/tor_henning"
-              className="cursor-pointer"
+            </a>
+            <a
+              href="https://www.twitter.com/tor_henning "
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
             >
-              <span className="cursor-pointer">Twitter</span>
-            </Link>
+              <span className="block">Twitter</span>{" "}
+            </a>
           </li>
           <li className="flex flex-row align-middle items-center">
-            <Link
-              href="https://www.twitter.com/tor_henning"
-              className="cursor-pointer"
+            <a
+              href="https://github.com/Loathar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
             >
               <div className="m-4 w-14 h-14 ">
                 <Image
@@ -48,10 +68,15 @@ export default function Kontakt() {
                   className="cursor-pointer"
                 />
               </div>
-            </Link>
-            <Link href="https://github.com/Loathar" className="cursor-pointer">
-              <span className="cursor-pointer">GitHub</span>
-            </Link>
+            </a>
+            <a
+              href="https://github.com/Loathar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
+            >
+              <span className="block">GitHub</span>
+            </a>
           </li>
         </ul>
       </section>
